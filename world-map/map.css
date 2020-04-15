@@ -1,0 +1,7 @@
+#locations {
+    background-image: url("../data-pictures/map.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 90vw;
+    height: 600px;
+}
