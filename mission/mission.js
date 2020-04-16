@@ -21,25 +21,25 @@ const result = document.getElementById('result');
 const resultDescription = document.getElementById('result-description');
 
 title.textContent = location.title;
-image.src = '../data/locations/' + location.image;
+image.src = '../data-pictures/' + location.image;
 description.textContent = location.description;
 const survivor = getSurvivor();
 
 if (survivor.kit === 'tough-kit') {
     for (let index = 0; index < location.choices.toughKitChoices.length; index++) {
-        const choice = location.choices[index];
+        const choice = location.choices.toughKitChoices[index];
         const choiceDOM = createChoice(choice);
         choices.appendChild(choiceDOM);
     }
 } else if (survivor.kit === 'sneak-kit') {
     for (let index = 0; index < location.choices.sneakKitChoices.length; index++) {
-        const choice = location.choices[index];
+        const choice = location.choices.sneakKitChoices[index];
         const choiceDOM = createChoice(choice);
         choices.appendChild(choiceDOM);
     }
 } else {
     for (let index = 0; index < location.choices.itemKitChoices.length; index++) {
-        const choice = location.choices[index];
+        const choice = location.choices.itemKitChoices[index];
         const choiceDOM = createChoice(choice);
         choices.appendChild(choiceDOM);
     }}
@@ -49,12 +49,18 @@ choiceForm.addEventListener('submit', (event) => {
 
     const formData = new FormData(choiceForm);
     const choiceId = formData.get('choice');
-    const choice = findById(location.choices, choiceId);
-
     const survivor = getSurvivor();
+    let choice = null;
 
-    scoreLocation(choice, location.Id, survivor);
+    if (survivor.kit === 'tough-kit') {
+        choice = findById(location.choices.toughKitChoices, choiceId);
+    } else if (survivor.kit === 'sneak-kit') {
+        choice = findById(location.choices.sneakKitChoices, choiceId);
+    } else {
+        choice = findById(location.choices.itemKitChoices, choiceId);
+    }
 
+    scoreLocation(choice, locationId, survivor);
     saveSurvivor(survivor);
 
     choiceForm.classList.add('hidden');

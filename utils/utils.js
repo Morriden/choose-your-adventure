@@ -9,7 +9,7 @@ export function saveSurvivor(survivor) {
 export function getSurvivor() {
     const temp = localStorage.getItem('survivor');
     if (!temp) return null;
-    const survivor = JSON.parse('temp');
+    const survivor = JSON.parse(temp);
     return survivor;
 }
 
@@ -50,7 +50,7 @@ export function findById(array, id) {
 }
 
 export function scoreLocation(choice, locationId, survivor) {
-    survivor.health += choice.health;
-    survivor.supplies += choice.gold;
+    survivor.health += choice.hp;
+    survivor.supplies += choice.supplies;
     survivor.completed[locationId] = true;
 }

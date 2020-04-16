@@ -14,7 +14,7 @@ for (let i = 0; i < locations.length; i++) {
     if (survivor.completed[location.id]) {
         locationDisplay = createCompletedLocation(location);
     } else {
-        locationDisplay = createLocationLink(location)
+        locationDisplay = createLocationLink(location);
     }
     nav.appendChild(locationDisplay);
 }
