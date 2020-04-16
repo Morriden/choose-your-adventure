@@ -1,4 +1,4 @@
-import { saveSurvivor, getSurvivor, loadSurvivor, isDead, findById, scoreLocation } from '../utils/utils.js';
+import { saveSurvivor, getSurvivor, loadSurvivor, findById, scoreLocation } from '../utils/utils.js';
 import locations from '../data/locations.js';
 import { createChoice } from './createChoice.js';
 
@@ -66,4 +66,6 @@ choiceForm.addEventListener('submit', (event) => {
     choiceForm.classList.add('hidden');
     result.classList.remove('hidden');
     resultDescription.textContent = choice.result;
+    loadSurvivor();
 });
+

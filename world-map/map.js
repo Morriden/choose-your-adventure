@@ -1,9 +1,17 @@
 import { getSurvivor, loadSurvivor, isDead } from '../utils/utils.js';
 import locations from '../data/locations.js';
 import { createLocationLink } from '../mission/createlocationlink.js';
-import { createCompletedLocation } from '../createcompletedlocation.js';
+import { createCompletedLocation } from './createcompletedlocation.js';
+import { completedAllQuests } from './completedallquests.js';
+
+loadSurvivor();
+
 
 const survivor = getSurvivor();
+
+if (isDead(survivor) || completedAllQuests(locations, survivor)) {
+    window.location.href = '../results/results.html';
+}
 
 const nav = document.getElementById('locations');
 
