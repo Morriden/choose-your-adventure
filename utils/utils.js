@@ -37,3 +37,20 @@ export function loadSurvivor() {
 export function isDead(survivor) {
     return survivor.health <= 0;
 }
+
+export function findById(array, id) {
+    for (let index = 0; index < array.length; index++) {
+        const item = array[index];
+        if (item.id === id) {
+            return item;
+        }
+    }
+
+    return null;
+}
+
+export function scoreLocation(choice, locationId, survivor) {
+    survivor.health += choice.health;
+    survivor.supplies += choice.gold;
+    survivor.completed[locationId] = true;
+}
