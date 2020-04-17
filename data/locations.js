@@ -142,11 +142,84 @@ const abandonedFarmHouse = {
     }
 };
 
+const hospital = {
+    id: 'hospital',
+    title: 'The Hospital',
+    map: {
+        top: '40%',
+        left: '45%'
+    },
+    image: 'hospital.jpg',
+    description: 'You decide to take your chances at the general hospital. Strangely enough there seems to be a fresh fire going on one of the ambulances. You hear a scream come from inside the building. You see a medical personnel is being dragged down the hallway by a duo of raiders. They are demanding the person show them where the supplies are hidden.',
+    choices: {
+        toughKitChoices: [{
+            id: 'toughKitBattle',
+            description: 'You pull out your weapons and take a deep breath. This person needs help.',
+            result: 'You turn the corner and catch the first raider off guard dropping them to the ground. You and the other raider get into a rough fight. They stab you in the side but you manage to kick them out of the window. The medical personnel thanks you and agrees to head back to the community with you after you get there supplies. You lose 15 health since the medical professional tries to assist you. You also gain 25 supplies.',
+            hp: -10,
+            supplies: 25
+        }, {
+            id: 'toughKitSneak',
+            description: 'This is too dangerous for the supplies you brought. Youll have to try to sneak out of there.',
+            result: 'You slowly sneak away to another floor of the hospital. You recall the raiders speaking about a stash. You start to search for it but come across one of the raiders. The raider yells and you draw your blade getting into a bloody fight. As youre standing over the raiders body breathing heavily you hear more of them running to your location. You quickly grab the raiders supplies and leave the hospital gripping your side. You lose 10 health and gain 10 supplies.',
+            hp: -10,
+            supplies: 10
+        }, {
+            id: 'toughKitItems',
+            description: 'You decide to wait for the perfect oppurtunity to try to save this medical personnel.',
+            result: 'The medical personnel takes the raiders to there stash. You see a large trunk full of food and medical supplies. The raiders toss the personnel to the side. This is your chance, you start shoving a wall that looks ready to collapse and it falls unto the raiders ending them. Sadly it looks like it crushed some of the supplies as well. Youve lost 0 health and gained 5 supplies.',
+            hp: 0,
+            supplies: 10
+        }],
+
+        sneakKitChoices: [{
+            id: 'sneakKitBattle',
+            description: 'You pull out your blade and take a deep breath. This person needs help.',
+            result: 'You wait patiently as one of the raiders comes around the corner, you drop them with your surprise. The other raider screams and runs at you. After a blood fight stand up clutching your wounds. The medical personnel helps you to the best of there abilities and agree to head back with you with the supplies. Youve lost 15 health and gained 25 supplies.',
+            hp: -15,
+            supplies: 25
+        }, {
+            id: 'sneakKitSneak',
+            description: 'You take a deep breath and creep back into the shadows. If you risk your life the community might not get anything!',
+            result: 'You slowly sneak away to another floor of the hospital. You recall the raiders speaking about a stash. As you come across the stash you hear footsteps behind you. You quickly duck behind a ruined shelf and watch. A raider enters the room smiling, there smile doesnt last for long as you push them out of a window and snag the supplies for yourself. You have a moment of guilt about leaving the medical personnel lose 5 health but gain 25 supplies.',
+            hp: -5,
+            supplies: 25
+        }, {
+            id: 'sneakKitItems',
+            description: 'You decide to wait for the perfect oppurtunity to try to save this medical personnel.',
+            result: 'You follow the trio around the hospital until they finally reach the stash of supplies. The raiders toss the medical personnal behind them and start going through the supplies. You take this time to toss a smoke bomb and escape with the medical personnel. They thank you and offer to join your community as a medic. Youve gained 5 health and 5 supplies.',
+            hp: 5,
+            supplies: 5
+        }],
+
+        itemKitChoices: [{
+            id: 'itemKitBattle',
+            description: 'You pull out your hammer and take a deep breath. This person needs help.',
+            result: 'You turn the corner and rush the two raiders, they are clearly stronger then you but with help from the medical personnel you overcome them. As you clutch your wounds the medical personnel agrees to get the supplies and go back to the community with you. Youve lost 20 health from grief and gained 25 supplies.',
+            hp: -20,
+            supplies: 25
+        }, {
+            id: 'itemKitSneak',
+            description: 'You take a deep breath and creep back into the shadows. If you risk your life the community might not get anything!',
+            result: 'You quickly leave the situation grabbing the small things you can on the way out. You sigh and feel guilt ridden as you abandoned this person to there fate. Youve lost 5 health from grief, and gained 5 supplies.',
+            hp: -5,
+            supplies: 5
+        }, {
+            id: 'itemKitItems',
+            description: 'You decide to wait for the perfect oppurtunity to try to save this medical personnel.',
+            result: 'You follow the trio around the hospital and realize theres only one place the supplies could be. You take the back stairs and beat them there. You quickly set up a trap with your tools and wait for the trio to arrive. Once the trio arrives your trap is sprung and it handles one of the raiders. You and the medical personnel handle the second raider as a group, and get the supplies to take back to the community. Youve lost 10 health and gained 25 supplies.',
+            hp: -10,
+            supplies: 25
+        }]
+    }
+};
+
 
 
 const locations = [
     groceryMarket,
-    abandonedFarmHouse
+    abandonedFarmHouse,
+    hospital
 ];
 
 export default locations;

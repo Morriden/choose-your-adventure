@@ -25,7 +25,6 @@ h3 {
 
 p {
     text-align: center;
-    background-color: rgba(243, 195, 131, 0.568);
 }
 
 button {
@@ -39,9 +38,8 @@ div {
 
 .label {
     text-decoration: underline;
-    background-color: rgba(243, 195, 131, 0.568);
 }
 
-.choose {
+main {
     background-color: rgba(243, 195, 131, 0.568);
 }
