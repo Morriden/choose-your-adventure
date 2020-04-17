@@ -18,7 +18,7 @@ const nav = document.getElementById('locations');
 for (let i = 0; i < locations.length; i++) {
     const location = locations[i];
     let locationDisplay = null;
-
+    console.log(location);
     if (survivor.completed[location.id]) {
         locationDisplay = createCompletedLocation(location);
     } else {
