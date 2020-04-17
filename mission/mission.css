@@ -1,0 +1,21 @@
+body {
+    background-color: burlywood;
+}
+
+main {
+    text-align: center;
+}
+
+.survivor {
+    text-align: end;
+    
+}
+
+.hidden {
+    display: none;
+}
+
+img {
+    height: 400px;
+    width: 650px;
+}

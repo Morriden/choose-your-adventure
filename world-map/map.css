@@ -1,7 +1,43 @@
+body {
+    margin: 0;
+    background-color: rgb(107, 56, 56);
+    position: absolute;
+    flex-direction: column;
+}
+
 #locations {
+    position: relative;
     background-image: url("../data-pictures/map.jpg");
     background-size: contain;
     background-repeat: no-repeat;
     width: 90vw;
     height: 600px;
+    left: 100px;
+    bottom: 25px;
+    
+}
+
+.location {
+    position: absolute;
+    color: rgb(238, 154, 18);
+    font-weight: bold;
+    background-color: rgb(8, 82, 63);
+}
+
+header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.survivor {
+    border: 2px solid brown;
+}
+
+h3 {
+    position: relative;
+    font-weight: bold;
+    text-decoration: underline;
+    font-size: 25px;
+    left: 102px;
 }
