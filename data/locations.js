@@ -82,60 +82,60 @@ const abandonedFarmHouse = {
     choices: {
         toughKitChoices: [{
             id: 'toughKitBattle',
-            description: 'You notice someone is arriving back at the farm house. Survival of the fittest, you have to take these items for your community.',
-            result: 'You start shoving your bags full of supplies. You run out of the farmhouse and slam into the old man. He begs you to not take everything but you dont look back. Youve lost 5 health and gained 20 supplies.',
+            description: 'You notice someone is arriving at the farm house. Survival of the fittest, you have to take these items for your community.',
+            result: 'You run out the front door to face whoever has arrived. You slam into an old man who hits the ground hard and is knocked out cold. You pause for a moment and then think of the community and quickly fill your bags. Youve lost 5 health from guilt and gained 20 supplies.',
             hp: -5,
             supplies: 20
         }, {
             id: 'toughKitSneak',
-            description: 'You notice someone is arriving back at the farm house. You decide to hide in one of the back rooms while grabbing supplies.',
-            result: 'The older man walks by the room you are hiding in, you take this time to sneak out of the room but he notices you. You get into a scuffle with the old man but knock him to the ground and run off. Youve lost 10 health and gained 10 supplies.',
-            hp: -10,
-            supplies: 10
+            description: 'Youre unsure whos coming to the farmhouse, is it a group? Raiders perhaps. You decide to play it safe and sneak out of the house.',
+            result: 'You slide into a room and wait for an opening to run out the front door. You notice in the room some supplies so you quickly shove them into your bag. You hear whoever it is walk by and run out of the room and house not looking back. You lose 0 health and gain 5 supplies.',
+            hp: 0,
+            supplies: 5
         }, {
             id: 'toughKitItems',
-            description: 'You decide to not be a scavenger and introduce yourself to the old man. You talk briefly and decide to make a trade.',
-            result: 'Sadly you didnt bring anything really worth trading. You do offer up one of your weapons and he agrees to give you some supplies for it. Youve lost 5 health and gained 10 supplies.',
-            hp: -5,
+            description: 'You decide to be honest and walk out the front door, perhaps whoever it is will be understanding.',
+            result: 'As you walk outside you see an oldman who is shocked and ridden with fear. You explain you are here to trade, he agrees. Sadly you didnt bring anything to trade with you. You do offer up one of your weapons and he agrees to give you some supplies for it. Youve lost 0 health and gained 10 supplies.',
+            hp: -0,
             supplies: 10
         }],
 
         sneakKitChoices: [{
             id: 'sneakKitBattle',
-            description: 'Survival of the fittest. You draw your knife.',
-            result: 'You take out the old man as he enters the home quickly and quietly. As you stand back up you realize what youve done and feel terrible. In your grief you dont grab all fo the supplies. Youve lost 10 health and gained 10 supplies.',
+            description: 'You notice someone is arriving at the farm house. Survival of the fittest, you have to take these items for your community.',
+            result: 'As the front door opens you quickly and quietly take out your target. As you stand back up you realize what youve done and feel terrible, he was a old man. In your grief you dont grab all fo the supplies. Youve lost 10 health and gained 10 supplies.',
             hp: -10,
-            supplies: 10
-        }, {
-            id: 'sneakKitSneak',
-            description: 'You quickly slide into the shadows as the old man walks by.',
-            result: 'You start to slide important items into your bag, the old man is oblivious to you and your skill. Youve gained 15 supplies.',
-            hp: 0,
             supplies: 15
         }, {
+            id: 'sneakKitSneak',
+            description: 'Youre unsure whos coming to the farmhouse, is it a group of people? Raiders perhaps. You decide to play it safe and sneak out of the house.',
+            result: 'You quickly slide to the back of the kitchen and start filling your bag full of supplies. Your skill and speed allow you to avoid whoever it is that came inside. You lose 0 health and gain 10 supplies.',
+            hp: 0,
+            supplies: 10
+        }, {
             id: 'sneakKitItems',
-            description: 'You decide to try to barter with the old man. He agrees to take a look at what you have',
-            result: 'Sadly your kit doesnt really have anything he can use. He takes pity on your story though and gives you what he can spare. Youve gained 5 supplies.',
+            description: 'You decide to be honest and walk out the front door, perhaps whoever it is will be understanding.',
+            result: 'As you walk outside you see an oldman who is shocked and ridden with fear. You explain you are here to trade, he agrees. Sadly your kit doesnt really have anything he can use. He takes pity on your story though and gives you what he can spare. Youve gained 5 supplies.',
             hp: 0,
             supplies: 5
         }],
 
         itemKitChoices: [{
             id: 'itemKitBattle',
-            description: 'As the old man enters the home you assault him with a board from your bag.',
-            result: ' As he hits the ground you drop to your knees, what have you done...youve lost 5 health and gained 10 supplies.',
+            description: 'You notice someone is arriving at the farm house. Survival of the fittest, you have to take these items for your community.',
+            result: 'As the figure walks in you slam your hammer into the target. You drop to your knees as you realize youve just taken someones life. He was just a old man....what have youve done. You grab the supplies you can while stricken with grief. Youve lost 10 health from grief and gained 10 supplies.',
             hp: -5,
             supplies: 10
         }, {
             id: 'itemKitSneak',
-            description: 'You decide to try to hide from the old man.',
-            result: 'You enter a small room and look for a way to leave without him noticing you. You open a window and attempt to climb out, in your rush you drop some supplies. Youve gained 5 health, and lost 5 supplies.',
+            description: 'Youre unsure whos coming to the farmhouse, is it a group? Raiders perhaps. You decide to play it safe and sneak out of the house.',
+            result: 'You run into a back room and shut the door. You open a window and attempt to climb out, in your rush you drop some supplies. Youve gained 5 health, and lost 5 supplies.',
             hp: 5,
             supplies: -5
         }, {
             id: 'itemKitItems',
-            description: 'You introduce yourself and offer to trade.',
-            result: 'He seems ecstatic at what you have to offer, you spend the better part of an afternoon trading goods....and stories! Youve lost 5 health, and gained 20 supplies.',
+            description: 'You decide to be honest and walk out the front door, perhaps whoever it is will be understanding.',
+            result: 'As you walk outside you see an oldman who is shocked and ridden with fear. You explain you are here to trade, he agrees. He seems ecstatic at what you have to offer, you spend the better part of an afternoon trading goods....and stories! Youve lost 5 health from assisting him, and gained 20 supplies.',
             hp: -5,
             supplies: 20
         }]
