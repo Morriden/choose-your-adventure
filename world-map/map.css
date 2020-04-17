@@ -1,8 +1,6 @@
 body {
     margin: 0;
     background-color: rgb(107, 56, 56);
-    position: absolute;
-    flex-direction: column;
 }
 
 #locations {
@@ -32,12 +30,15 @@ header {
 
 .survivor {
     border: 2px solid brown;
+    background: burlywood;
+    padding: 8px;
 }
 
 h3 {
     position: relative;
     font-weight: bold;
     text-decoration: underline;
+    color: goldenrod;
     font-size: 25px;
     left: 102px;
 }

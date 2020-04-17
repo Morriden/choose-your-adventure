@@ -8,6 +8,10 @@ main {
 
 .survivor {
     text-align: end;
+    background: burlywood;
+    padding: 8px;
+    position: fixed;
+    right: 10px;
     
 }
 
@@ -23,4 +27,10 @@ img {
 #choices {
     display: flex;
     flex-direction: column;
+}
+
+a {
+    color: black;
+    border: 1px solid red;
+    padding: 1px;
 }

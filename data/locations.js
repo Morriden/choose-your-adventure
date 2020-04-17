@@ -2,8 +2,8 @@ const groceryMarket = {
     id: 'market',
     title: 'Grocery Market',
     map: {
-        top: '30%',
-        left: '70%'
+        top: '60%',
+        left: '30%'
     },
     image: 'grocerystore.jpg',
     description: 'While searching the grocery market, you are met with a group of wandering undead entering the store.',
@@ -74,8 +74,8 @@ const abandonedFarmHouse = {
     id: 'farmhouse',
     title: 'Abandoned Farm House',
     map: {
-        top: '60%',
-        left: '30%'
+        top: '30%',
+        left: '70%'
     },
     image: 'farmhouse.jpg',
     description: 'You approach a abandoned farmhouse, as you enter the building you notice that it is full of supplies! Upon closer look it seems someone is arriving at the house after youve made it inside.',

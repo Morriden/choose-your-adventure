@@ -8,7 +8,7 @@ body {
     background-position: center;
     background-size: contain;
     height: 657px;
-    background-color: burlywood;
+    background-color: rgba(243, 195, 131, 0.568);
 
 }
 
@@ -20,12 +20,12 @@ legend {
 h3 {
     border: 3px solid rgb(109, 9, 9);
     text-decoration: underline;
-    background-color: burlywood;
+    background-color: rgba(243, 195, 131, 0.568);
 }
 
 p {
     text-align: center;
-    background-color: burlywood;
+    background-color: rgba(243, 195, 131, 0.568);
 }
 
 button {
@@ -39,9 +39,9 @@ div {
 
 .label {
     text-decoration: underline;
-    background-color: burlywood;
+    background-color: rgba(243, 195, 131, 0.568);
 }
 
 .choose {
-    background-color: burlywood;
+    background-color: rgba(243, 195, 131, 0.568);
 }
