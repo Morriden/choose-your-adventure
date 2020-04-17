@@ -10,60 +10,60 @@ const groceryMarket = {
     choices: {
         toughKitChoices: [{
             id: 'toughKitBattle',
-            description: 'Fight your way through them, you need these supplies',
+            description: 'Fight your way through them, you need these supplies!',
             result: 'You brandish your modified baseball bat and get to work on the shambling undead. The supplies are yours! Sadly there was a locked room you couldnt open. Youve lost 5 health and gained 15 supplies.',
             hp: -5,
             supplies: 15
         }, {
             id: 'toughKitSneak',
-            description: 'You decide to try a more stealthy approach.',
+            description: 'You need to avoid these zombies!',
             result: 'While trying to sneak out of the building you drop one of your weapons and alert the Undead to your presence. You fight your way to a window and escape to safety. Youve lost 5 health and gained 5 supplies.',
             hp: -5,
             supplies: 5
         }, {
             id: 'toughKitItems',
-            description: 'You throw one of the items you found out the window',
-            result: 'The item hits a car and an alarm starts to go off drawing the Undead away! Sadly you had to throw some supplies to make it happen. Youve gained 5 supplies.',
+            description: 'Use your wits and supplies to try to overcome the undead!',
+            result: 'You start to throw things out a window toward a car. The item hits the car and an alarm starts to go off drawing the Undead away! Sadly you had to throw some supplies to make it happen. Youve gained 5 supplies.',
             hp: 0,
             supplies: 5
         }],
 
         sneakKitChoices: [{
             id: 'sneakKitBattle',
-            description: 'Fight your way through them, you need these supplies.',
+            description: 'Fight your way through them, you need these supplies!',
             result: 'You pull out your small blade and start taking out the Undead one by one, sadly one of the beasts falls into a shopping cart alerting the others! Time to run! Youve lost 10 health and gained 5 supplies.',
             hp: -10,
             supplies: 5
         }, {
             id: 'sneakKitSneak',
-            description: 'You decide to try a more stealthy approach',
-            result: 'You parkour up one of the shelves and find a spot to lay low in. After some time the Undead seem to be drawn to another location, leaving the supplies ripe for the taking. Youve lost 5 health and gained 15 supplies.',
+            description: 'You need to avoid these zombies!',
+            result: 'You parkour up one of the shelves and find a spot to lay low in. After some time the Undead seem to be drawn to another location, leaving the supplies ripe for the taking. Youve lost 5 health from waiting and gained 15 supplies.',
             hp: -5,
             supplies: 15
         }, {
             id: 'sneakKitItems',
-            description: 'You pull out one of your smoke bombs and throw it at the entrance to the store.',
-            result: 'It buys you some time to grab some supplies before making a run for it! Youve lost 5 health and gained 10 supplies.',
+            description: 'Use your wits and supplies to try to overcome the undead!',
+            result: 'You pull a smoke bomb out of your bag and throw it at the door. It buys you some time to grab some supplies before making a run for it! Youve lost 5 health and gained 10 supplies.',
             hp: -5,
             supplies: 10
         }],
 
         itemKitChoices: [{
             id: 'itemKitBattle',
-            description: 'You quickly pull out a board to barricade the door with!',
-            result: 'It buys you some time to run out the back window grabbing what supplies you see along the way. Sadly you had to use supplies to escape. Youve gained no resources.',
-            hp: 0,
-            supplies: 0
+            description: 'Fight your way through them, you need these supplies!',
+            result: 'You rush the door with your hammer and start attacking the zombies. Sadly theres too many of them for you to handle! You wedge the door shut and run toward the back grabbing what you can. You lose 10 health and gain 10 supplies.',
+            hp: -10,
+            supplies: 10
         }, {
             id: 'itemKitSneak',
-            description: 'You attempt to hide behind a shelf but your huge bag full of items knocks everything to the ground!',
-            result: 'The undead come scrambling in and you have to fight them off with whatever you can find! Luckily with the Undead taken care of you can search the entire building. Youve lost 15 health and gained 20 supplies.',
-            hp: -15,
-            supplies: 20
+            description: 'You need to avoid these zombies!',
+            result: 'The zombies start entering the building as you try to avoid them by taking a different aisle. You make your way toward the side entrance and are cut off by a zombie! You fight off the zombie and grab what you can before running out of the building. You lose 5 health and gain 5 supplies.',
+            hp: -5,
+            supplies: 5
         }, {
             id: 'itemKitItems',
-            description: 'You quickly pull out a board and nails to barricade the door with!',
-            result: 'It buys you some time to run out the back window grabbing what supplies you see along the way. Sadly you had to use supplies to escape. Youve gained 10 supplies.',
+            description: 'Use your wits and supplies to try to overcome the undead!',
+            result: 'You quickly pull out your tools and slam the door shut barracading the door. This buys you plenty of time to grab the supplies before leaving through a back window. You lose no health and gain 15 supplies.',
             hp: 0,
             supplies: 10
         }]

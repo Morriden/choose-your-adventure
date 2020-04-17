@@ -20,6 +20,9 @@ body {
     color: rgb(238, 154, 18);
     font-weight: bold;
     background-color: rgb(8, 82, 63);
+    border-radius: 10px;
+    padding: 5px;
+    
 }
 
 header {
@@ -41,4 +44,8 @@ h3 {
     color: goldenrod;
     font-size: 25px;
     left: 102px;
+}
+
+a:hover {
+    background-color: red;
 }
