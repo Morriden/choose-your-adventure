@@ -1,10 +1,35 @@
 body {
+    text-align: center;
+    background-color: burlywood;
+    padding: 10px;
+}
+
+main {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    text-align: left;
+    background-color: burlywood;
+    padding: 10px;
+}
+
+.sectionone {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
     text-align: center;
     background-color: burlywood;
     padding: 10px;
+}
+
+img {
+    width: 200px;
+    height: 300px;
+}
+
+p {
+    text-indent: 30px;
 }
 
