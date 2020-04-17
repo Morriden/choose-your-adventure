@@ -1,6 +1,15 @@
 body {
-    position: absolute;
-    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: url('../data-pictures/city.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    height: 657px;
+    background-color: burlywood;
+
 }
 
 legend {
@@ -10,9 +19,29 @@ legend {
 
 h3 {
     border: 3px solid rgb(109, 9, 9);
+    text-decoration: underline;
+    background-color: burlywood;
 }
 
-header {
-    display: flex;
-    align-items: flex-end;
+p {
+    text-align: center;
+    background-color: burlywood;
+}
+
+button {
+    position: absolute;
+    left: 560px;
+}
+
+div {
+    text-decoration: underline;
+}
+
+.label {
+    text-decoration: underline;
+    background-color: burlywood;
+}
+
+.choose {
+    background-color: burlywood;
 }
